@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myshop/ui/cart/cart_screen.dart';
 import 'package:myshop/ui/products/product_detail_screen.dart';
 import 'package:myshop/ui/products/products_manager.dart';
 import 'package:myshop/ui/products/user_products_screen.dart';
@@ -18,15 +19,19 @@ class MyApp extends StatelessWidget {
       title: 'My Shop',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          fontFamily: 'Lato',
-          colorScheme: ColorScheme.fromSwatch(
-            primarySwatch: Colors.purple,
-          ).copyWith(
-            secondary: Colors.deepOrange,
-          )),
-      home: const SafeArea(
-        child: UserProductScreen(),
+        fontFamily: 'Lato',
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.purple,
+        ).copyWith(
+          secondary: Colors.deepOrange,
+        ),
       ),
+      home: const SafeArea(
+        child: CartScreen(),
+      ),
+      // home: const SafeArea(
+      //   child: UserProductScreen(),
+      // ),
     );
   }
 }
