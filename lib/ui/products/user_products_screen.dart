@@ -3,6 +3,7 @@ import 'package:myshop/ui/shared/app_drawer.dart';
 
 import 'user_product_list_tile.dart';
 import 'products_manager.dart';
+import 'package:provider/provider.dart';
 
 class UserProductScreen extends StatelessWidget {
   static const routeName = '/user-products';
@@ -28,16 +29,20 @@ class UserProductScreen extends StatelessWidget {
   }
 
   Widget buildUserProductListView(ProductsManager productsManager) {
-    return ListView.builder(
-      itemCount: productsManager.itemCount,
-      itemBuilder: (ctx, i) => Column(
-        children: [
-          UserProductListTile(
-            productsManager.items[i],
+    return Consumer<ProductsManager>(
+      builder: (ctx, productsManager, child) {
+        return ListView.builder(
+          itemCount: productsManager.itemCount,
+          itemBuilder: (ctx, i) => Column(
+            children: [
+              UserProductListTile(
+                productsManager.items[i],
+              ),
+              const Divider(),
+            ],
           ),
-          const Divider(),
-        ],
-      ),
+        );
+      },
     );
   }
 
