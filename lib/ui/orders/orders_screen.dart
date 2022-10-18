@@ -22,7 +22,9 @@ class OrdersScreen extends StatelessWidget {
         builder: (ctx, ordersManager, child) {
           return ListView.builder(
             itemCount: ordersManager.orderCount,
-            itemBuilder: (ctx, i) => OrderItemCard(ordersManager.orders[i]),
+            itemBuilder: (ctx, i) => OrderItemCard(
+              ordersManager.orders[i],
+            ),
           );
         },
       ),
