@@ -37,5 +37,6 @@ class OrdersManager with ChangeNotifier {
         dateTime: DateTime.now(),
       ),
     );
+    notifyListeners();
   }
 }
