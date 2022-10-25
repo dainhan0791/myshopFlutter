@@ -41,7 +41,7 @@ class AuthService {
       }
 
       final authToken = _fromJson(responseJson);
-      log(authToken.userId)
+      log(authToken.userId);
       log(authToken.token!);
       _saveAuthToken(authToken);
 
