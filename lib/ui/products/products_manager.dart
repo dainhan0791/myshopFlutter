@@ -66,6 +66,10 @@ class ProductsManager with ChangeNotifier {
   //   _items.removeAt(index);
   //   notifyListeners();
   // }
+  // void toggleFavoriteStatus(Product product) {
+  //   final savedStatus = product.isFavorite;
+  //   product.isFavorite = !savedStatus;
+  // }
 
   Future<void> updateProduct(Product product) async {
     final index = _items.indexWhere((item) => item.id == product.id);
@@ -89,8 +93,12 @@ class ProductsManager with ChangeNotifier {
     }
   }
 
-  void toggleFavoriteStatus(Product product) {
+  Future<void> toggleFavoriteStatus(Product product) async {
     final savedStatus = product.isFavorite;
     product.isFavorite = !savedStatus;
+
+    if (!await _productService.saveFavoriteStatus(product)) {
+      product.isFavorite = savedStatus;
+    }
   }
 }

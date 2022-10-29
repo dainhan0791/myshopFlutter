@@ -1,0 +1,13 @@
+POST https://myshop-project-b1909960-default-rtdb.firebaseio.com/products.json?auth=eyJhbGciOiJSUzI1NiIsImtpZCI6IjNmNjcyNDYxOTk4YjJiMzMyYWQ4MTY0ZTFiM2JlN2VkYTY4NDZiMzciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbXlzaG9wLXByb2plY3QtYjE5MDk5NjAiLCJhdWQiOiJteXNob3AtcHJvamVjdC1iMTkwOTk2MCIsImF1dGhfdGltZSI6MTY2NjcwODI1NSwidXNlcl9pZCI6Ijd2a0xJaGd0MTVlY2ZrUnNSY3c1RVVybU5TYjIiLCJzdWIiOiI3dmtMSWhndDE1ZWNma1JzUmN3NUVVcm1OU2IyIiwiaWF0IjoxNjY2NzA4MjU1LCJleHAiOjE2NjY3MTE4NTUsImVtYWlsIjoiZGFpbmhhbkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZGFpbmhhbkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.LzI9C76X8FyXPCOq_zXORKng8IpSesc2k7UcAiE_DKfr4mqeIGneNObIiP_fD_mdsJTDaymk8sFfctoMKs2i2nB8aSFQsCdVlWKdxbd8xqCEc3sy1kHmLFAf6-VRik8zyulpefO-VrjQQBtu_osWpjghdiGFWOnxHYhozunw2Uo9WgRZYY-SseP8FX_Aocagkv_A1Nw3LNXrmGi67q7tRvlnOj5fBpgGXIHmaCL_QwYD1b72nGcZawtEoHZXRonGtgyJkNg-T3Qz6exjcBROI03uyYIe0rbfz-MNOaFPlo-X1fyf4KjpKvSIWhdyDfjFsnmw_XRbE9QTHPhR0FUajQ
+Content-Type: application/json
+
+{
+    "creatorId": "c7vkLIhgt15ecfkRsRcw5EUrmNSb2",
+    "description": "Prepare any meal you want.",
+    "imageUrl": "https://upload.wikimedia.org/.../1024px-Cast-Iron-Pan.jpg",
+    "price": 49.99,
+    "title": "A Pan"
+}
+    
+
+

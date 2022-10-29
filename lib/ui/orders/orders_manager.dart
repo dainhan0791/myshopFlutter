@@ -4,19 +4,19 @@ import 'package:flutter/foundation.dart';
 
 class OrdersManager with ChangeNotifier {
   final List<OrderItem> _orders = [
-    OrderItem(
-      id: 'o1',
-      amount: 59.98,
-      products: [
-        CartItem(
-          id: 'c1',
-          title: 'Red Shirt',
-          price: 29.9,
-          quantity: 2,
-        )
-      ],
-      dateTime: DateTime.now(),
-    ),
+    // OrderItem(
+    //   id: 'o1',
+    //   amount: 59.98,
+    //   products: [
+    //     CartItem(
+    //       id: 'c1',
+    //       title: 'Red Shirt',
+    //       price: 29.9,
+    //       quantity: 2,
+    //     )
+    //   ],
+    //   dateTime: DateTime.now(),
+    // ),
   ];
   int get orderCount {
     return _orders.length;
